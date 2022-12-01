@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Cyberpunk";
+    src: url(fonts/Cyberpunk/Cyberpunk.otf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/poppins/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: "Zen";
+    src: url(fonts/Zen_Dots/ZenDots-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #262631;
+    font-family: "Cyberpunk";
+}
+section#header .brand{
+    color: #FFC23C;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    -webkit-text-stroke: 1px black;
+
+}
+section#header nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(219, 217, 217);
+    justify-content: space-around;
+}
+section#header ul{
+    margin-top: 30px;
+    width: 350px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+section#header li a{ 
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+section#header a:hover{
+    color: #FFC23C;
+}
+section#header button{
+    background-color: #FFC23C;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Cyberpunk";
+}
+section#header button:hover{
+    color: white;
+}
+section#header nav #icon{
+    color: #FFC23C;
+    font-size: 40px;
+    line-height: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    section#header .brand{
+       margin-left: -80px; 
+    }
+    section#header nav #icon{
+        display: block;
+        margin-right: -40px;
+    }
+    section#header nav{
+        border: none;
+    }
+    section#header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 40vh;
+        background-color: #000075;
+        top: 50px;
+        right: -100%;
+        text-align: center;
+        display: block;
+        border: 1px solid rgb(219, 217, 217);
+        border-left: none;
+        border-right: none;
+        transition: all .5s;
+        z-index: 1;
+    }
+    section#header nav ul li{
+        padding-top: 5%;
+    }
+    section#header nav ul.show{
+        right: 0;
+    }
+    section#body.show2{
+        margin-top: 40vh;
+        transition: all .6s;
+    }
+ }
+
+ /* ================================================================================ */
+
+ section#body{
+    width: 100%;
+    display: flex;
+ }
+ section#body .left{
+    color: white;
+    flex: 50%;
+    /* background-color: salmon; */
+ }
+ section#body .title{
+    margin-top: 25%;
+    margin-left: 5%;
+ }
+ section#body .title h2{
+    font-size: 48px;
+    -webkit-text-stroke: 1px black;
+
+
+ }
+ section#body .title p{
+    padding-top: 15px;
+    line-height: 1.8rem;
+    width: 85%;
+    font-family: "Zen";
+ }
+ section#body .title span{
+    font-family: "Cyberpunk";
+    color: #FFC23C;
+    font-size: 32px;
+ }
+ section#body .right{
+    flex: 50%;
+    background-color: blanchedalmond;
+ }
