@@ -40,6 +40,10 @@ Route::post('/employee/create', [EmployeeController::class, 'create']);
 Route::get('/employee/{id}/edit', [EmployeeController::class, 'edit']);
 Route::post('/employee/{id}/update', [EmployeeController::class, 'update']);
 Route::get('/employee/{id}/delete', [EmployeeController::class, 'delete']);
+
+Route::get('/print-data', [EmployeeController::class, 'print'])->name('print-data');
+Route::get('/print-data/{id}', [EmployeeController::class, 'printid'])->name('print-dataid');
+Route::get('/print-excel', [EmployeeController::class, 'excel'])->name('print-excel');
 });
 
 

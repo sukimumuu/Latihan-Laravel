@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Employee;
 use App\Models\Companies;
 use Illuminate\Http\Request;
+use App\Exports\EmployeeExport;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Maatwebsite\Excel\Facades\Excel;
+
 
 class EmployeeController extends Controller
 {
@@ -65,5 +68,22 @@ class EmployeeController extends Controller
             $daplo = Employee::find($id);
             $daplo->delete();
             return redirect('/employee/data')->with('success', 'Data deleted successfully');
+        }
+        public function print(){
+            $daplo = Employee::all();
+            $pdf = Pdf::loadView('employee.printpdf', compact('daplo'),[
+                "title" => "Print Data"
+            ])->setOptions(['defaultFont' => 'sans-seerif']);
+            return $pdf->stream();
+        }
+        public function printid($id){
+            $daploid = Employee::find($id);
+            $pdf = Pdf::loadView('employee.printpdfid', compact('daploid'),[
+                "title" => "Print Data"
+            ])->setOptions(['defaultFont' => 'sans-seerif']);
+            return $pdf->stream();
+        }
+        public function excel(){
+            return Excel::download(new EmployeeExport, 'employee-data.xlsx');
         }
 }

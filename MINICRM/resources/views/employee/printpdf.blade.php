@@ -1,26 +1,62 @@
-@extends('layout.main')
-@section('container')
+   <style>
+      .table-wrapper{
+   
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
 
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+h4{
+  text-align: center;
+}
+   </style>
    <div class="content">
     <div class="row">
         <div class="col-md-12">
     <div class="card bg-dark">
       <div class="card-header">
-        <h4 class="card-title"> Employee List</h4>
+        <h4 class="card-title"> Employee Data</h4>
       </div>
       @php
           $no=1;
       @endphp
-      @if($message = Session::get('success'))
-      <div class="alert alert-success" role="alert">
-        {{ $message }}
-      </div>
-      @endif
       <div class="card-body">
-          <table class="table tablesorter py-4" id="example">
-            <a href="/employee/add" class="btn btn-success">Add Data +</a>
-            <a href="/print-data" class="btn btn-info">Print PDF</a>
-            <a href="/print-excel" class="btn btn-primary">Print Excel</a>
+        <div class="table-wrapper">
+          <table class="fl-table">
             <thead class=" text-primary">
               <tr>
                 <th>No</th>
@@ -31,7 +67,6 @@
                 <th>Phone</th>
                 <th>Gender</th>
                 <th>Ability</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -45,18 +80,12 @@
                 <td>{{ $key2->phone }}</td>
                 <td>{{ $key2->gender }}</td>
                 <td>{{ $key2->hobbies }}</td>
-                <td>
-                    <a href="/employee/{{ $key2->id }}/edit"><button type="button" class="btn btn-warning">Edit</button></a>
-                    <a href="/employee/{{ $key2->id }}/delete"><button type="button" class="btn btn-danger">Delete</button></a>
-                    <a href="/print-data/{{ $key2->id }}"><button type="button" class="btn btn-info">Print</button></a>
-                </td>
               </tr>
               @endforeach
             </tbody>
           </table>
+        </div>
       </div>
     </div>
     </div>
     </div>
-  
-@endsection
