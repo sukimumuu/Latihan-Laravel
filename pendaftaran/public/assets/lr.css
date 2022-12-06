@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    overflow: hidden;
+    height: 640px;
+    width: 520px;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    
+}
+.box h1{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 149, 255);
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    padding: 10px;
+    cursor: default;
+}
+.inputan label{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.inputan{
+    width: 100%;
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 5%;
+}
+.inputan input{
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+
+.inputan input[type=date]{
+    width: 30%;
+    height: 30px;
+}
+.inputan input[type=date]::-webkit-calendar-picker-indicator{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+#signup{
+    width: 40%;
+    height: 30px;
+    margin-top: 10%;
+    margin-left: 30%;
+    font-size: 16px;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    background-color: rgb(49, 203, 75);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#signup:hover{
+    background-color: rgb(38, 159, 58);
+}
+.box .login{
+    margin-left: 46%;
+    margin-top: 5%;
+}
