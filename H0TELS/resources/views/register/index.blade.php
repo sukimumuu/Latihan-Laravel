@@ -17,93 +17,77 @@
         font-family: 'Poppins', sans-serif;
         
     }
-    .login{
-        width: 60%;
-        height: 550px;
-        display: flex;
-        flex-wrap: wrap;
-        border: 2px solid white;
+    .parent1{
+        width: 40%;
+        height: 500px;
+        background-color: white;
         margin: auto;
         margin-top: 10%;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    }
-    .right{
-        background-color: white;
-        flex: 50%;
-        display: block;
+        border-radius: 10px; 
     }
-    .right h2{
-        text-align: center;
-        font-weight: 400;
-        letter-spacing: 1px;
+    .parent2{
+        width: 50%;
+        margin: auto;
     }
-    .right span{
-        margin-left: 26%; 
+    .title{
+        margin: auto;
+        padding-top: 10px;
+        width: 10%;
     }
-    .left{
-        flex: 50%;
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 10px
     }
-    .left h2{
-        font-weight: 400;
-        text-align: center;
-        color: white;
-    }
-    .inputan{
-        padding-top: 30px;
-    }
-    .inputan input{
-        width: 80%;
-        height: 40px;
-        margin-left: 10%;
-        outline: none;
-        border: none;
-        border-bottom: 1px solid black;
+    .input input,label{
+        height: 25px;
         font-size: 18px;
-        padding-bottom: 0;
+        margin-top: 5px;
     }
     #masuk{
-        width: 120px;
-        height: 40px;
-        color: white;
-        background-color: rgb(50, 200, 24);
-        font-size:18px;
-        border: none;
-        margin-left: 39%;
+        float: right;
+        margin-top: 15px;
+        width: 100px;
+        height: 30px;
         cursor: pointer;
-        margin-top: 15%;
-        margin-bottom: 10%; 
-        border-radius: 20px; 
+        background-color: rgb(95, 95, 95);
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        border: none;  
     }
-    #masuk:hover{
-        background-color: rgb(45, 178, 21);
-        color: rgb(210, 209, 209);
+    .toregister{
+        font-size: 14px;
+        margin: 20px;
     }
 </style>
 <body>
-        <div class="login">
-             <div class="left">
-                <h2>H0TELS</h2>
-             </div>
-             <div class="right">
-                <h2>Daftar</h2>
-                <form action="{{ route('register.creating') }}" method="post">
-                    @csrf
-                <div class="inputan">
-                    <input type="text" name="name" id="name" placeholder="Nama kamu...">
-                </div>
-                <div class="inputan">
-                    <input type="text" name="nohp" id="nohp" placeholder="Nomor telepon kamu...">
-                </div>
-                <div class="inputan">
-                    <input type="email" name="email" id="email" placeholder="Email kamu...">
-                </div>
-                <div class="inputan">
-                    <input type="password" name="password" id="password" placeholder="Password kamu...">
-                </div>
-                <input type="submit" value="Masuk" id="masuk">
+       <div class="parent1">
+           <div class="title"><h2>Masuk</h2></div>
+           <div class="parent2">
+            <form action="{{ route('register.creating') }}" method="POST">
+                @csrf
+            <div class="input">
+                <label for="username">Username</label>
+                <input type="text" name="name">
+            </div>
+            <div class="input">
+                <label for="username">Nomor HP</label>
+                <input type="text" name="nohp">
+            </div>    
+            <div class="input">
+                <label for="username">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="input">
+                <label for="username">Password</label>
+                <input type="password" name="password">
+            </div>
+            <input type="submit" value="Daftar" id="masuk">
             </form>
-             </div>
-        </div>
+           </div>
+        </div> 
 </body>
 </html>
