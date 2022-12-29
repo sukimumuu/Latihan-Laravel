@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Library</title>
+    <title>Ussbrary</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-white border-bottom p-4 sticky-top">
         <div class="container">
-          <a class="navbar-brand fs-2" href="#"><i class="bi bi-book-half me-2"></i>Library</a>
+          <a class="navbar-brand fs-2" href="#"><i class="bi bi-book-half me-2"></i>Ussbrary</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,17 +56,17 @@
       <div class="container-fluid">
         <div class="text-center h1 mt-5 mb-5">Category</div>
         <div class="row col-xl-12 justify-content-center">
-            <div class="card col-xl-3 m-3">
-              <div class="card-title text-center h3 p-5"> <a href="#">Novel</a> </div>
+            <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/jason.jpg') }}) no-repeat; height: 60vh">
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Novel</a> </div>
               <div class="card-body"></div>
             </div>
-            <div class="card col-xl-3 m-3">
-              <div class="card-title text-center h3 p-5"> <a href="#">Education</a> </div>
-              <div class="card-body">B</div>
+            <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/edu.jpg') }}) no-repeat; height: 60vh">
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Education</a> </div>
+              <div class="card-body text-center text-white fs-5"></div>
             </div>
-            <div class="card col-xl-3 m-3">
-              <div class="card-title text-center h3 p-5"> <a href="#">Comic</a> </div>
-              <div class="card-body">C</div>
+            <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/comic.jpg') }}) no-repeat; background-size: cover; height: 60vh">
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Comic</a> </div>
+              <div class="card-body text-center text-white"></div>
             </div>
         </div>
       </div>
