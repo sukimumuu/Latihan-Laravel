@@ -42,7 +42,7 @@
         </div>
       </nav>
       <div class="container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/pickawood.jpg') }}); height:100vh;">
-          <div class="row col-xl-5 position-absolute top-50 start-50 translate-middle text-white mt-5">
+          <div class="row col-xl-5 col-12 position-absolute top-50 start-50 translate-middle text-white mt-5">
                <figure class="text-center">
                 <blockquote class="blockquote h1">
                   <p>“Books are the legacies that a great genius leaves to mankind, which are delivered down from generation to generation as presents to the posterity of those who are yet unborn.”</p>
@@ -57,18 +57,24 @@
         <div class="text-center h1 mt-5 mb-5">Category</div>
         <div class="row col-xl-12 justify-content-center">
             <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/jason.jpg') }}) no-repeat; height: 60vh">
-              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Novel</a> </div>
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Novel</a>
+              <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-5">Read more...</a></div>
               <div class="card-body"></div>
             </div>
             <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/edu.jpg') }}) no-repeat; height: 60vh">
-              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Education</a> </div>
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Education</a> 
+                <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-5">Read more...</a></div>
               <div class="card-body text-center text-white fs-5"></div>
             </div>
             <div class="card col-xl-3 m-3" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/img/comic.jpg') }}) no-repeat; background-size: cover; height: 60vh">
-              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Comic</a> </div>
+              <div class="card-title text-center display-5 p-5"> <a href="#" class="nav-link text-white mt-5">Comic</a> 
+                <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-5">Read more...</a></div>
               <div class="card-body text-center text-white"></div>
             </div>
         </div>
+      </div>
+      <div class="container-fluid p-5">
+        <div class="display-5 mt-5 col-xl-12 p-2" style="border-bottom:2px solid rgb(0, 0, 0);">Novel Trending</div>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
