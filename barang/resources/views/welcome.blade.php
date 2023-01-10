@@ -21,14 +21,14 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bookshelf</a>
+                <a class="nav-link" href="#">Shop</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   More...
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><i class="bi bi-shop me-2"></i>Shop</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Login</a></li>
                   <li><a class="dropdown-item" href="#"><i class="bi bi-person-workspace me-2"></i>Customer service</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle-fill me-2"></i>About</a></li>
@@ -74,7 +74,7 @@
             </div>
         </div>
       </div>
-      <div class="container-fluid mx-auto mt-4 row col-12 col-xl-12 justify-content-center">
+      <div class="container-fluid mx-auto mt-4 mb-5 row col-12 col-xl-12 justify-content-center">
           <div class="display-6 border-bottom-bl p-1 col-12 col-xl-12">Novel Trending</div>
           <div class="col-xl-9">
             <div class="card">
@@ -182,9 +182,53 @@
               </div>
             </div>
           </div>
-
+          
       </div>
-     
+      <footer class="container-fluid bg-dark">
+        <div class="w-75 p-3 mx-auto row col-xl-12 justify-content-center">
+            <div class="col-xl-3 text-white">
+              <a class="navbar-brand fs-1" href="#"><i class="bi bi-book-half me-2"></i>Ussbrary</a>
+            </div>
+            <div class="col-xl-3 p-2 text-white">
+              <span class="d-block fs-5">PT. Usshibook Indonesia</span>
+              <span class="d-block fs-5">Jl. Kejalanan pinggir No.19</span>
+              <span class="d-block fs-5">Kebun Kotak</span>
+              <div class="d-flex gap-4 mb-4 mt-4">
+                <i class="bi bi-facebook fs-3"></i>
+                <i class="bi bi-github fs-3"></i>
+                <i class="bi bi-instagram fs-3"></i>
+                <i class="bi bi-twitter fs-3"></i>
+              </div>
+              <span class="d-block fs-5">Mobile : 088-781-998</span>
+              <span class="d-block fs-5">Email : ussbrary@br.com</span>
+            </div>
+           <div class="col-xl-3 text-white">
+            <div class="">
+              <span class="fs-4 d-block" style="letter-spacing: 5px;">ABOUT US</span>
+              <span class="fs-6 d-block m-2">Employee</span>
+              <span class="fs-6 d-block m-2">Blog</span>
+              <span class="fs-6 d-block m-2">Media kit</span>
+            </div>
+           </div>
+           <div class="col-xl-3 text-white">
+            <div class="">
+              <span class="fs-4 d-block" style="letter-spacing: 5px;">PARTNER</span>
+              <span class="fs-6 d-block m-2">Mediaquery Indonesia</span>
+              <span class="fs-6 d-block m-2">Pinpinbook Asia</span>
+              <span class="fs-6 d-block m-2">Metadata Universe</span>
+            </div>
+            <div class="">
+              <span class="fs-4 d-block mt-2" style="letter-spacing: 5px;">SUPPORT</span>
+              <span class="fs-6 d-block m-2">Buku Indonesia</span>
+              <span class="fs-6 d-block m-2">Generasi Baca</span>
+              <span class="fs-6 d-block m-2">Dunia Bukuku</span>
+            </div>
+           </div>
+        </div>
+        <div class="col-xl-12 text-center text-white p-3">
+          © Ussbrabry 2023
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
