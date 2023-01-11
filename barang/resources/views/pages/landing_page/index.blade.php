@@ -28,7 +28,6 @@
                   More...
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('user.login') }}"><i class="bi bi-box-arrow-right me-2"></i>Login</a></li>
                   <li><a class="dropdown-item" href="#"><i class="bi bi-person-workspace me-2"></i>Customer service</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle-fill me-2"></i>About</a></li>
