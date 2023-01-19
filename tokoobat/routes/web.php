@@ -18,5 +18,7 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::get('register', [AuthController::class, 'register'])->name('register');
 Route::post('getLogin', [AuthController::class, 'getLogin'])->name('getLogin');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('user-register',[AuthController::class,'create'])->name('create.user');
 
 Route::get('dashboard/menu', [DashboardController::class, 'index'])->name('dashboard.menu');

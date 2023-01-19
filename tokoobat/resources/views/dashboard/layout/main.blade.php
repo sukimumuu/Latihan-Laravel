@@ -21,16 +21,16 @@
   data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
-  @include('dashboard.layout/head')
+  @include('dashboard.layout.head')
 
   <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
-        @include('dashboard.layout/sidebar')
+        @include('dashboard.layout.sidebar')
         <!-- Layout container -->
         <div class="layout-page">
-          @include('dashboard.layout/navbar')
+          @include('dashboard.layout.navbar')
 
           <!-- Content wrapper -->
           <div class="content-wrapper">

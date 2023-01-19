@@ -81,10 +81,16 @@
               </div>
               <!-- /Logo -->
 
-              <form id="formAuthentication" class="mb-3 mt-5" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3 mt-5" action="{{ route('create.user') }}" method="POST">
+                @csrf
+                <div class="mb-3">
+                    <label for="email" class="form-label">Username</label>
+                    <input type="text"class="form-control" id="email"name="name"placeholder="Enter your email or username"autofocus
+                    />
+                  </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text"class="form-control" id="email"name="email-username"placeholder="Enter your email or username"autofocus
+                  <input type="text"class="form-control" id="email"name="email"placeholder="Enter your email or username"autofocus
                   />
                 </div>
                 <div class="mb-3 form-password-toggle">
