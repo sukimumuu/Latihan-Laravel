@@ -38,7 +38,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-success border" href="{{ route('user.login') }}"><i class="bi bi-box-arrow-right me-2"></i>Login</a>
+                <a class="nav-link text-success border" href="{{ route('login') }}"><i class="bi bi-box-arrow-right me-2"></i>Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">

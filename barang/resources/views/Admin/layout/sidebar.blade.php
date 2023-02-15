@@ -3,8 +3,8 @@
 
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-                    <img src="{{ asset('assets/img/icon.ico') }}" alt="" srcset="" width="24">
-                    <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                    <i class="fas fa-book fa-2x text-gray-300"></i>
+                    <div class="sidebar-brand-text mx-3">Ussbrary</div>
                 </a>
 
                 <!-- Divider -->
@@ -12,11 +12,15 @@
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{ route('cp.index') }}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('crud_index') }}">
+                        <i class="fas fa-fw fa-laptop"></i>
+                        <span>Data Buku</span></a>
+                </li>
 
             </ul>
             <!-- End of Sidebar -->
