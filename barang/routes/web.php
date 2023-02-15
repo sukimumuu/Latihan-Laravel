@@ -31,8 +31,9 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/control-panel/crud/index',[BookController::class,'index'])->name('crud_index');
     Route::get('/control-panel/crud/add',[BookController::class,'add'])->name('crud-add');
     Route::post('/conrol-panel/crud/store',[BookController::class,'create'])->name('crud-create');
-    Route::get('/control-panel/crud/{id}/edit',[BookController::class,'edit'])->name('crud-edit');
-    Route::post('/control-panel/crud/{id}/update',[BookController::class,'update'])->name('crud-update');
+    Route::get('/control-panel/crud/{id}/edit',[BookController::class,'edit']);
+    Route::post('/control-panel/crud/{id}/update',[BookController::class,'update']);
+    Route::get('/control-panel/crud/{id}/delete',[BookController::class,'delete']);
 });
 
 

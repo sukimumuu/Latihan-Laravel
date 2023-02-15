@@ -28,7 +28,7 @@
                                 <td>{{ $for->category }}</td>
                                 <td>
                                     <a href="/control-panel/crud/{{ $for->id }}/edit"><i class="fas fa-file text-warning"></i></a>
-                                    <a href=""><i class="fas fa-trash text-danger"></i></a>
+                                    <a href="/control-panel/crud/{{ $for->id }}/delete"><i class="fas fa-trash text-danger"></i></a>
                                 </td>
                             </tr>
                         @endforeach

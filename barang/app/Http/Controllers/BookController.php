@@ -27,4 +27,9 @@ class BookController extends Controller
         $book->update($req->all());
         return redirect()->route('crud_index');
     }
+    public function delete($id){
+        $book = Buku::find($id);
+        $book->delete();
+        return redirect()->route('crud_index');
+    }
 }
