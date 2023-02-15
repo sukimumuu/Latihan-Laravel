@@ -28,9 +28,11 @@ Route::get('/user-logout', [LoginController::class,'logout'])->name('user.logout
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/landing-page',[PagesController::class,'index'])->name('index');
     Route::get('/control-panel/index',[AdminController::class,'index'])->name('cp.index');
-    Route::get('/control-panel/crud-index',[BookController::class,'index'])->name('crud_index');
-    Route::get('/control-panel/crud-add',[BookController::class,'add'])->name('crud-add');
-    Route::post('/conrol-panel/crud-store',[BookController::class,'create'])->name('crud-create');
+    Route::get('/control-panel/crud/index',[BookController::class,'index'])->name('crud_index');
+    Route::get('/control-panel/crud/add',[BookController::class,'add'])->name('crud-add');
+    Route::post('/conrol-panel/crud/store',[BookController::class,'create'])->name('crud-create');
+    Route::get('/control-panel/crud/{id}/edit',[BookController::class,'edit'])->name('crud-edit');
+    Route::post('/control-panel/crud/{id}/update',[BookController::class,'update'])->name('crud-update');
 });
 
 

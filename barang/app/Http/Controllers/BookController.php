@@ -18,4 +18,13 @@ class BookController extends Controller
         $add_book = Buku::create($req->all());
         return redirect()->route('crud_index');
     }
+    public function edit($id){
+        $book = Buku::find($id);
+        return view('Admin.crud_buku.edit',compact('book'));
+    }
+    public function update(Request $req, $id){
+        $book = Buku::find($id);
+        $book->update($req->all());
+        return redirect()->route('crud_index');
+    }
 }

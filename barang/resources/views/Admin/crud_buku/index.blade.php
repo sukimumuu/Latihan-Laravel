@@ -9,22 +9,27 @@
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <td>No</td>
                             <td>Nama</td>
                             <td>Penulis</td>
                             <td>Terbit</td>
                             <td>Kategori</td>
+                            <td>Aksi</td>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ( $book as $for)
-                            <tr>
+                            <tr class="text-center">
                                 <td>{{ $for->id }}</td>
-                                <td>{{ $for->name }}</td>
+                                <td class="text-left">{{ $for->name }}</td>
                                 <td>{{ $for->penulis }}</td>
                                 <td>{{ $for->tahun_terbit }}</td>
                                 <td>{{ $for->category }}</td>
+                                <td>
+                                    <a href="/control-panel/crud/{{ $for->id }}/edit"><i class="fas fa-file text-warning"></i></a>
+                                    <a href=""><i class="fas fa-trash text-danger"></i></a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
