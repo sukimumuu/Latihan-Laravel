@@ -36,5 +36,11 @@ Route::group(['middleware' => ['auth']], function(){
     Route::post('/control-panel/crud/{id}/update',[BookController::class,'update']);
     Route::get('/control-panel/crud/{id}/delete',[BookController::class,'delete']);
     Route::get('/control-panel/writer/index',[WriterController::class,'index'])->name('writer.index');
+    Route::get('/control-panel/writer/add',[WriterController::class,'add'])->name('writer.add');
+    Route::post('/control-panel/writer/create',[WriterController::class,'create'])->name('writer.create');
+    Route::get('/control-panel/writer/{id}/delete',[WriterController::class,'delete']);
+    Route::get('/control-panel/writer/{id}/edit',[WriterController::class,'edit']);
+    Route::post('/control-panel/writer/{id}/update',[WriterController::class,'update']);
+    Route::get('/control-panel/writer/{id}/delete',[WriterController::class,'delete']);
 });
 
