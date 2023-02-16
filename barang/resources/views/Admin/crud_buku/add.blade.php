@@ -12,9 +12,14 @@
                 <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Penulis</label>
-                <input type="text" name="writer" class="form-control" id="exampleInputPassword1">
-            </div>
+                <label for="company" class="form-label" style="font-size: 16px">Penulis</label><br>
+                <select name="company" id="company" style="width: 20%; text-align:center; height:40px; font-size: 16px; border-radius:10px; outline:none;">
+                        <option value="">Choose</option>
+                    @foreach ($writer as $for)
+                        <option value="{{ $for->id }}">{{ $for->writer }}</option>
+                    @endforeach
+                </select>
+                </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Tahun Terbit</label>
                 <input type="text" name="years" class="form-control" id="exampleInputPassword1">

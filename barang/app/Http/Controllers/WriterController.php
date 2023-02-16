@@ -12,7 +12,8 @@ class WriterController extends Controller
         return view('Admin.writer.index',compact('writer'));
     }
     public function add(){
-        return view('Admin.writer.add');
+        $writer = Writer::all();
+        return view('Admin.writer.add', compact('writer'));
     }
     public function create(Request $req){
         $writer = Writer::create($req->all());
