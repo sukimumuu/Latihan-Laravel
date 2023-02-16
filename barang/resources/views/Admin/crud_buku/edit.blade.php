@@ -13,11 +13,11 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Penulis</label>
-                <input type="text" name="penulis" value="{{ $book->penulis }}" class="form-control" id="exampleInputPassword1">
+                <input type="text" name="writer" value="{{ $book->writer }}" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Tahun Terbit</label>
-                <input type="text" name="tahun_terbit" value="{{ $book->tahun_terbit }}" class="form-control" id="exampleInputPassword1">
+                <input type="text" name="years" value="{{ $book->years }}" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Kategori</label>

@@ -13,11 +13,11 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Penulis</label>
-                <input type="text" name="penulis" class="form-control" id="exampleInputPassword1">
+                <input type="text" name="writer" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Tahun Terbit</label>
-                <input type="text" name="tahun_terbit" class="form-control" id="exampleInputPassword1">
+                <input type="text" name="years" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Kategori</label>

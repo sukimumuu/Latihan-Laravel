@@ -21,6 +21,15 @@
                         <i class="fas fa-fw fa-laptop"></i>
                         <span>Data Buku</span></a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('writer.index') }}">
+                        <i class="fas fa-fw fa-laptop"></i>
+                        <span>Data Penulis</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('crud_index') }}">
+                        <i class="fas fa-fw fa-laptop"></i>
+                        <span>Kategori</span></a>
+                </li>
             </ul>
             <!-- End of Sidebar -->

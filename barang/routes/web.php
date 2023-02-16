@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\WriterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +35,6 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/control-panel/crud/{id}/edit',[BookController::class,'edit']);
     Route::post('/control-panel/crud/{id}/update',[BookController::class,'update']);
     Route::get('/control-panel/crud/{id}/delete',[BookController::class,'delete']);
+    Route::get('/control-panel/writer/index',[WriterController::class,'index'])->name('writer.index');
 });
-
-
 
