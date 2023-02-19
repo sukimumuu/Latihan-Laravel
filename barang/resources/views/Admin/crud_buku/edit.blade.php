@@ -23,9 +23,13 @@
                 <label for="exampleInputPassword1" class="form-label">Kategori</label>
                 <input type="text" name="category" value="{{ $book->category }}" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="mb-3">
+            {{--  <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
                 <input class="form-control" value="{{ $book->desc }}" name="desc" id="" type="text"></input>
+            </div>  --}}
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
+                <textarea class="form-control" name="desc" id="" cols="10" rows="10">{{ $book->desc }}</textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

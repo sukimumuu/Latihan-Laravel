@@ -11,7 +11,7 @@ class LoginController extends Controller
         return view('Auth.login');
     }
     public function takeData(Request $req){
-        if (Auth::attempt($req->only('email','password'))) {
+        if (Auth::attempt($req->only('name','password'))) {
             return redirect()->route('index');
         }
         return view('Auth.login');

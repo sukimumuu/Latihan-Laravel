@@ -17,7 +17,7 @@
                         <span>Dashboard</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('crud_index') }}">
+                    <a class="nav-link" href="{{ route('crud-index') }}">
                         <i class="fas fa-fw fa-laptop"></i>
                         <span>Data Buku</span></a>
                 </li>
@@ -27,7 +27,7 @@
                         <span>Data Penulis</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('crud_index') }}">
+                    <a class="nav-link" href="{{ route('category.index') }}">
                         <i class="fas fa-fw fa-laptop"></i>
                         <span>Kategori</span></a>
                 </li>

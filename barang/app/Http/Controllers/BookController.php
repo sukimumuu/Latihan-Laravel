@@ -22,7 +22,7 @@ class BookController extends Controller
     }
     public function create(Request $req){
         $add_book = Book::create($req->all());
-        return redirect()->route('crud_index');
+        return redirect()->route('crud-index');
     }
     public function edit($id){
         $book = Book::find($id);
