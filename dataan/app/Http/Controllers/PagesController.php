@@ -9,4 +9,7 @@ class PagesController extends Controller
     public function index(){
         return view('layout.master');
     }
+    public function login(){
+        return view('auth.login');
+    }
 }

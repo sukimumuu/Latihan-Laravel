@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PagesController;
 
 /*
@@ -14,4 +15,7 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', [PagesController::class,'index']);
+Route::get('/game-world', [PagesController::class,'index'])->name('home');
+Route::get('/', [PagesController::class,'login'])->name('login');
+Route::post('/login-process', [LoginController::class,'process']);
+

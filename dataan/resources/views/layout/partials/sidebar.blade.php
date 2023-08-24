@@ -21,9 +21,9 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-user"></i>
               <p>
-                Layout Options
+                Account
                 <i class="fas fa-angle-left right"></i>
                 {{-- <span class="badge badge-info right">6</span> --}}
               </p>
@@ -31,8 +31,8 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <i class="far fa-power nav-icon"></i>
+                  <p>Logout</p>
                 </a>
               </li>
               <li class="nav-item">
