@@ -18,4 +18,6 @@ use App\Http\Controllers\PagesController;
 Route::get('/game-world', [PagesController::class,'index'])->name('home');
 Route::get('/', [PagesController::class,'login'])->name('login');
 Route::post('/login-process', [LoginController::class,'process']);
+Route::get('/logout', [LoginController::class,'logout']);
+
 

@@ -30,8 +30,8 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-power nav-icon"></i>
+                <a href="/logout" class="nav-link">
+                  <i class="fas fa-sign-out-alt nav-icon"></i>
                   <p>Logout</p>
                 </a>
               </li>
