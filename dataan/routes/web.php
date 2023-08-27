@@ -23,5 +23,6 @@ Route::get('/logout', [LoginController::class,'logout']);
 Route::get('/profil', [PagesController::class,'profil'])->name('profil');
 Route::get('/profil-edit', [ProfilController::class,'edit'])->name('profil-edit');
 Route::patch('/profil-update', [ProfilController::class,'update'])->name('profil-update');
+Route::get('/category', [PagesController::class,'category'])->name('category');
 
 

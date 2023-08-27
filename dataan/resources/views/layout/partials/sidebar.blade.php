@@ -40,13 +40,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-gamepad"></i>
               <p>
-                Widgets
-                {{-- <span class="right badge badge-danger">New</span> --}}
+                Game
+                <i class="fas fa-angle-left right"></i>
+                {{-- <span class="badge badge-info right">6</span> --}}
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-plus-circle nav-icon"></i>
+                  <p>Add Game</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('category') }}" class="nav-link">
+                  <i class="fas fa-th-list nav-icon"></i>
+                  <p>Category</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">

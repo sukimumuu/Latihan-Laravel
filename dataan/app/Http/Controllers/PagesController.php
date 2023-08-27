@@ -20,4 +20,9 @@ class PagesController extends Controller
             'title' => "Settings Account"
         ]);
     }
+    public function category(){
+        return view('category.index',[
+            'title' => "Category Games"
+        ]);
+    }
 }
