@@ -14,5 +14,10 @@ class PagesController extends Controller
     public function login(){
         return view('auth.login');
     }
-    public function 
+    public function profil(Request $req){
+        return view('profil.setting', [
+            'user' => $req->user(),
+            'title' => "Settings Account"
+        ]);
+    }
 }

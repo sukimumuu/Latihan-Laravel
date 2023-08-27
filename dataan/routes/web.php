@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,8 @@ Route::get('/game-world', [PagesController::class,'index'])->name('home');
 Route::get('/', [PagesController::class,'login'])->name('login');
 Route::post('/login-process', [LoginController::class,'process']);
 Route::get('/logout', [LoginController::class,'logout']);
+Route::get('/profil', [PagesController::class,'profil'])->name('profil');
+Route::get('/profil-edit', [ProfilController::class,'edit'])->name('profil-edit');
+Route::patch('/profil-update', [ProfilController::class,'update'])->name('profil-update');
 
 

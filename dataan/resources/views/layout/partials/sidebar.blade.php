@@ -65,7 +65,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                <a href="/profil" class="nav-link">
                   <i class="fas fa-cog nav-icon"></i>
                   <p>Settings</p>
                 </a>
