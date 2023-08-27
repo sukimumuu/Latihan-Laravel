@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/dist/css/loader.css') }}">
 </head>
 <body class="hold-transition sidebar-mini">
+  
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -44,9 +46,16 @@
 
 <!-- jQuery -->
 <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+      setTimeout(() => {
+        $('.loader-bg').fadeToggle();
+      }, 1500);
+</script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('assets/dist/js/adminlte.min.js') }}"></script>
+<script src="assets/dist/js/pages/dashboard.js"></script>
 </body>
 </html>
