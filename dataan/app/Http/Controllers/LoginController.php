@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function process(Request $req){
+        $this->validate($req,[
+            'email' => ['required'],
+            'password' => ['required'],
+        ]);
+        
         if(Auth::attempt($req->only('email','password'))){
             return redirect()->route('home');
         }

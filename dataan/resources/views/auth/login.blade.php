@@ -35,6 +35,9 @@
             </div>
           </div>
         </div>
+        @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="input-group mb-3">
           <input type="password" class="form-control" placeholder="Password" name="password">
           <div class="input-group-append">
@@ -43,6 +46,9 @@
             </div>
           </div>
         </div>
+        @error('password')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
@@ -57,7 +63,6 @@
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->
-        </div>
       </form>
 
       <div class="social-auth-links text-center mt-2 mb-3">
