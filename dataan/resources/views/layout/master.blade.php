@@ -13,6 +13,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/dist/css/loader.css') }}">
+  <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css
+" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
   
@@ -46,11 +49,31 @@
 
 <!-- jQuery -->
 <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script>
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js
+"></script>
+{{-- <script>
       setTimeout(() => {
         $('.loader-bg').fadeToggle();
       }, 1500);
+</script> --}}
+<script>
+  $('.logout').click( function(){
+      swal.fire({
+          title: 'Are you sure want to logout?',
+          text: "If you logout, you should login again",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, i want to logout!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location = "/logout"
+
+          }
+        });
+  });
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

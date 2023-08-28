@@ -74,10 +74,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/logout" class="nav-link">
+               
+                <a href="#" class="nav-link logout">
                   <i class="fas fa-sign-out-alt nav-icon"></i>
                   <p>Logout</p>
                 </a>
+                
               </li>
               <li class="nav-item">
                 <a href="/profil" class="nav-link">
