@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class PagesController extends Controller
 {
@@ -21,7 +22,8 @@ class PagesController extends Controller
         ]);
     }
     public function category(){
-        return view('category.index',[
+        $category = Category::all();
+        return view('category.index', compact('category'), [
             'title' => "Category Games"
         ]);
     }

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,7 @@ Route::get('/profil', [PagesController::class,'profil'])->name('profil');
 Route::get('/profil-edit', [ProfilController::class,'edit'])->name('profil-edit');
 Route::patch('/profil-update', [ProfilController::class,'update'])->name('profil-update');
 Route::get('/category', [PagesController::class,'category'])->name('category');
+Route::get('/add-category', [CategoryController::class,'add'])->name('add-category');
+Route::post('/add-category-process', [CategoryController::class, 'store']);
 
 
